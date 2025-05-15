@@ -1,0 +1,157 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+ body{
+    font-family: 'Poppins', sans-serif;
+ }
+#navbar{
+    background-color: rgb(238, 62, 62);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    right: 200px;
+    border: 2px rgb(10, 10, 10) solid;
+    font-family:cursive;
+    font-size: 25px;
+    border-radius: 6px;
+}
+
+#container {
+   padding: 30px;
+   position: relative;
+   z-index: 1;
+}
+.book-container-css{
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(5, 5, 5);
+    color: rgb(255, 255, 255);
+    margin: 30px;
+    border-radius: 8px;
+    line-height: 26px;
+    display: inline-block;
+    vertical-align: top;
+}
+.book-none-css{
+    display: none;
+}
+.book-title-css{
+    color: rgb(245, 105, 105);
+}
+.book-author-css{
+    margin-top: 5px;
+    font-weight: bolder;
+} 
+.delete-button{
+    background-color: rgb(241, 15, 15);
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+.delete-button:hover{
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.plus-button{
+    position:sticky;
+    margin-top: 300px;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(222, 42, 42);
+    font-size: 50px;
+    border-radius: 100%;
+    border: 1px rgb(5, 1, 1) solid;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.plus-button:hover{
+    width: 105px;
+    height: 105px;
+    transition: 0.3s;
+}
+
+.overlay{
+    background-color: rgb(8, 8, 8);
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;          
+    opacity: 0.8; 
+    z-index: 1;
+    display: none;
+}
+
+.popup-css {
+   position:relative;
+   background-color: rgb(245, 41, 41);
+   color: black;
+   margin-left: 500px;
+   width: 25%;
+   z-index: 2;
+   border: 1px rgb(0, 0, 0) solid;
+   border-radius: 20px;
+   display: none;
+   padding: 10px;
+           
+}
+
+.form-pop{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-pop input{
+    height: 35px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px black solid;
+    background:transparent;
+    font-size: 16px;
+
+}
+.form-pop input::placeholder{
+    color: black;
+    font-size: 15px;
+}
+.form-pop input:focus{
+    outline: none;
+}
+.form-pop textarea{
+     margin-top: 15px;
+     height: 60px; 
+     background-color: transparent;
+     border: 2px black solid;
+     font-size: 16px;
+}
+textarea::placeholder{
+    padding-top: 20px;
+    color:black;
+    font-size: 15px;
+}
+.form-pop textarea:focus{
+    outline: none;
+}
+
+.popup-css button{
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: black;
+    color: red;
+    border: 1px;
+    transition: 0.3s;
+}
+.popup-css button:hover{
+    background-color: rgb(237, 122, 122);
+    color: black;
+    transition: 0.3s;  
+    cursor: pointer;
+}

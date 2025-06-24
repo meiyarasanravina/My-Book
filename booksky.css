@@ -89,6 +89,7 @@
 
 .popup-css {
    position:relative;
+    left:200px;
    background-color: rgb(245, 41, 41);
    color: black;
    width: 50%;
